@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suyash Pawar | DevOps &amp; Cyber Security</title>
+<meta name="description" content="Portfolio of Suyash Pawar: DevOps and CyberSec engineer with a security-first approach. Docker, Kubernetes, Jenkins, AWS.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1218'/%3E%3Cpath d='M8 11l6 5-6 5M16 22h8' stroke='%234cc9f0' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1218;--panel:#101b24;--line:#1f3040;--ink:#d9e4ec;--muted:#8aa0b0;--cyan:#4cc9f0;--ok:#4ade80}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "IBM Plex Sans",system-ui,sans-serif;
+background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 30% 0,rgba(10,18,24,.55),var(--bg) 75%);pointer-events:none;z-index:-1}
+.mono,h1,h2,h3,nav{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace}
+a{color:var(--cyan)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(10,18,24,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);font-size:.88rem}
+nav .wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+nav b{color:var(--cyan);margin-right:auto;font-weight:700}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:70px 0 60px}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;margin:0 0 16px;letter-spacing:-.03em}
+.role{color:var(--cyan);font-size:1.05rem;margin:0 0 14px}
+.lead{color:var(--muted);margin:0 0 26px;max-width:30em}
+.btn{display:inline-block;padding:11px 20px;border-radius:4px;font:600 .92rem "JetBrains Mono",monospace;text-decoration:none;margin:0 10px 10px 0}
+.btn.main{background:var(--cyan);color:#06222c}
+.btn.alt{border:1px solid var(--line);color:var(--ink)}
+.btn.alt:hover{border-color:var(--cyan)}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;font:.84rem/1.7 "JetBrains Mono",monospace;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.term .bar{display:flex;gap:7px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:.78rem}
+.term .bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.term .bar span{margin-left:8px}
+.term pre{margin:0;padding:16px 18px;white-space:pre-wrap;color:var(--ink)}
+.term .l{display:block;opacity:0;animation:show .01s forwards}
+.term .l:nth-child(1){animation-delay:.3s}.term .l:nth-child(2){animation-delay:.9s}.term .l:nth-child(3){animation-delay:1.5s}
+.term .l:nth-child(4){animation-delay:2.1s}.term .l:nth-child(5){animation-delay:2.7s}.term .l:nth-child(6){animation-delay:3.3s}
+.term .p{color:var(--ok)}.term .k{color:var(--cyan)}.term .m{color:var(--muted)}
+.cur{display:inline-block;width:.55em;height:1em;background:var(--cyan);vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes show{to{opacity:1}}
+@keyframes blink{50%{opacity:0}}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 26px;letter-spacing:-.01em}
+h2::before{content:"~/";color:var(--cyan)}
+h3{font-size:1.02rem;margin:0 0 6px}
+.about{max-width:42em;color:var(--ink)}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.stats span{font:.82rem "JetBrains Mono",monospace;color:var(--muted);border:1px solid var(--line);padding:6px 12px;border-radius:4px;background:var(--panel)}
+.stats b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.box p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.55}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.tags li{font:.76rem "JetBrains Mono",monospace;color:var(--cyan);border:1px solid var(--line);padding:2px 9px;border-radius:3px}
+.proj .box{display:flex;flex-direction:column}
+.proj .box a{margin-top:auto;padding-top:14px;font:.85rem "JetBrains Mono",monospace}
+.tl{border-left:2px solid var(--line);margin:0;padding:0 0 0 22px;list-style:none}
+.tl li{position:relative;margin:0 0 24px}
+.tl li::before{content:"";position:absolute;left:-29px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--cyan)}
+.tl .when{font:.8rem "JetBrains Mono",monospace;color:var(--muted)}
+.contact a{display:block;font-family:"JetBrains Mono",monospace;margin:0 0 8px}
+footer{padding:30px 0 56px;border-top:1px solid var(--line);color:var(--muted);font:.8rem "JetBrains Mono",monospace}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:44px}nav b{width:100%}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.term .l{opacity:1;animation:none}.cur{animation:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap">
+  <b>suyash@portfolio:~$</b>
+  <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#education">education</a><a href="#contact">contact</a>
+</div></nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <p class="role mono">DevOps &amp; Cyber Security</p>
+      <h1>Suyash Pawar</h1>
+      <p class="lead">I automate builds, ship containers, and lock down cloud infrastructure. Docker, Kubernetes, Jenkins, and AWS, with security built in from the first commit.</p>
+      <a class="btn main" href="resume.pdf" download>Download resume</a>
+      <a class="btn alt" href="https://github.com/spdevsecops-30">GitHub</a>
+      <a class="btn alt" href="https://github.com/spdevsecops-30/suyashpawar.github.io.git">Contact</a>
+    </div>
+    <div class="term" aria-label="Terminal summary">
+      <div class="bar"><i></i><i></i><i></i><span>bash</span></div>
+      <pre><span class="l"><span class="p">$</span> whoami</span><span class="l">suyash-pawar</span><span class="l"><span class="p">$</span> cat stack.txt</span><span class="l"><span class="k">git jenkins docker kubernetes aws ansible</span></span><span class="l"><span class="p">$</span> status</span><span class="l"><span class="m">open to DevOps roles</span> <span class="p">[ready]</span> <span class="cur"></span></span></pre>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>about</h2>
+    <p class="about">I am a DevOps trainee at CDAC ACTS. I learn by building complete pipelines: code on GitHub, an automated Jenkins build, a Docker image, and a deployment on Kubernetes or AWS. Replace this text with two or three sentences about you and the role you want.</p>
+    <div class="stats">
+      <span>focus: <b>CI/CD</b></span><span>cloud: <b>AWS</b></span><span>runtime: <b>Docker, Kubernetes</b></span><span>os: <b>Linux</b></span>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>skills</h2>
+    <div class="grid">
+      <div class="box"><h3>Containers</h3><p>Dockerfiles, Compose, Swarm, volumes, networks, image tagging and registry pushes.</p></div>
+      <div class="box"><h3>Orchestration</h3><p>Kubernetes pods, deployments, services, rolling updates, local clusters with kind.</p></div>
+      <div class="box"><h3>CI/CD</h3><p>Jenkins pipelines that build, test, containerize, and deploy from GitHub.</p></div>
+      <div class="box"><h3>Cloud</h3><p>AWS EC2, S3, VPC, Lambda, DynamoDB, with public and private subnet design.</p></div>
+      <div class="box"><h3>Security basics</h3><p>IAM roles and users, security groups, bastion host access, SSH key authentication.</p></div>
+      <div class="box"><h3>Automation</h3><p>Ansible, Puppet, shell scripting, Git workflows on Linux (Ubuntu).</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="proj">
+    <h2>projects</h2>
+    <div class="grid">
+      <div class="box"><h3>Dockerized Django notes app</h3><p>Django app and MySQL database running as containers on a private Docker network.</p>
+        <ul class="tags"><li>Docker</li><li>MySQL</li><li>Django</li></ul><a href="https://github.com/spdevsecops-30/suyashpawar.github.io">view source</a></div>
+      <div class="box"><h3>Jenkins CI/CD pipeline</h3><p>Pulls a Java app from GitHub, builds an image, pushes to DockerHub, and deploys to Kubernetes.</p>
+        <ul class="tags"><li>Jenkins</li><li>Docker</li><li>Kubernetes</li></ul><a href="https://github.com/spdevsecops-30/suyashpawar.github.io">view source</a></div>
+      <div class="box"><h3>Secure AWS network</h3><p>Custom VPC with public and private subnets, a bastion host, and least-privilege IAM roles.</p>
+        <ul class="tags"><li>VPC</li><li>EC2</li><li>IAM</li></ul><a href="https://github.com/spdevsecops-30/suyashpawar.github.io">view write-up</a></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>education</h2>
+    <ul class="tl">
+      <li><span class="when">2026-27</span><h3>CDAC ACTS</h3><p class="mono" style="margin:0;color:var(--muted);font-size:.85rem">Add course name</p></li>
+      <li><span class="when">2022-26</span><h3>BE-Computer(SPPU)</h3><p class="mono" style="margin:0;color:var(--muted);font-size:.85rem">Add college name</p></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>contact</h2>
+    <a href="mailto:spdevsecops30@gmail.com">spdevsecops30@gmail.com</a>
+    <a href="https://github.com/spdevsecops-30">https://github.com/spdevsecops-30</a>
+    <a href="https://www.linkedin.com/in/">linkedin.com/in/YOUR-PROFILE</a>
+  </section>
+
+  <footer>&copy; 2026 Suyash Pawar</footer>
+</div>
+</body>
+</html>
